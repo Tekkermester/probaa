@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+
+@font-face {
+  font-family: Caveat;
+  src: url(/fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(/fonts/RubikBubbles-Regular.ttf);
+}
+
+body {
+  background-image: url(háttérkép.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+}
+*::selection {
+  background-color: rgb(212, 158, 59);
+  color: white;
+}
+#kontener {
+  border: 2px dotted black;
+}
+/* conbinators:  = minden; > ami konkretan benne van; +;~ */
+#kontener > p {
+  background-color: rgb(215, 157, 94);
+}
+h1 {
+  text-align: center;
+  font-family: Oswald;
+  text-shadow: -1px -1px 1px black;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(235, 170, 126);
+  text-shadow: 1px 1px 1px black;
+}
+/* megjelnés ráhúzáskor */
+#rahuzas {
+  font-size: 24px;
+  color: hsl(115, 92%, 44%);
+  font-weight: 900;
+  display: inline-block;
+}
+#rahuzas p {
+  color: aqua;
+  display: none;
+}
+#rahuzas:hover p {
+  display: block;
+}
+#p1::first-line {
+  font-style: italic;
+}
+h1::first-letter {
+  font-size: 70px;
+  color: rgb(217, 125, 63);
+}
+#gyumolcsok li::marker {
+  content: "✔️";
+  font-size: 1.15em;
+}
+#alma::after {
+  content: "🍎";
+}
+#barack::after {
+  content: "🍑";
+}
+#korte::after {
+  content: "🍐";
+}
+

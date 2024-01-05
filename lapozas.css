@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Rubik;
+    src: url(/fonts/RubikBubbles-Regular.ttf);
+  }
+
+.lapozas {
+    text-align: center;
+    height: 10px;
+    padding-bottom: 65px;
+    margin-top: 50px;
+    
+  }
+  
+  .lapozas a {
+    padding: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 200;
+    color: darkorange;
+  }
+  .lapozas a.aktiv {
+    background-color: blue;
+    border-radius: 26px;
+  }
+  .lapozas a:not(.aktiv):hover{
+    background-color: rgb(180, 168, 149);
+    border-radius: 26px;
+    
+  }
+  .lapozas a:not(.aktiv):active{
+    background-color: rgb(45, 227, 255);
+    border-radius: 26px;
+  }

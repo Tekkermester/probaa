@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+*::selection{
+    background-color: hsl(235, 96%, 33%);
+    color: yellow;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+h1{
+    display: inline-block;
+    color: hsl(171, 100%, 33%);
+    font-family: Oswald;
+    margin-left: 40%;
+    
+}
+#fent{
+    margin-bottom: 55px;
+}
+.le{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+.le a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: hsla(0, 0%, 0%, 0.681);
+    background-color: hsl(0, 0%, 80%);
+    padding: 10px 15px;
+}
+.le button{
+    background-color: hsl(210, 2%, 49%);
+    border: none;
+    padding:10px;
+    color: white;
+    border-radius: 10px;
+}
+.le .opciok{
+    box-shadow: -2px 2px 5px hsla(0, 0%, 0%, 0.763);
+    display: none;
+}
+.le:hover .opciok{
+    display: block;
+}
+.le .opciok a:hover{
+    background-color: hsl(0, 0%, 69%);
+}
+.le .opciok a:active{
+    background-color: hsl(0, 0%, 69%);
+    color:white
+}.le:hover button{
+    background-color: hsl(0, 0%, 33%);
+}

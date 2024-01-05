@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Caveat;
+  src: url(/fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(/fonts/RubikBubbles-Regular.ttf);
+}
+body {
+  margin:0;
+}
+header{
+  text-align: center;
+  background-color: hsl(0, 0%, 89%);
+  padding: 8px;
+}
+
+
+
+aside{
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: hsl(0, 0%, 93%);
+  padding-right: 10px;
+  display: block;
+  position:relative;
+  padding-left: 10px;
+  
+  
+}
+
+article{
+  display: block;
+  width: 80%;
+  padding-left: 10px;
+  float: left;
+  margin-bottom: 110px;
+  
+}
+footer{
+  clear:both;
+  padding-top: 25px;
+}
+.info{
+  width: 100%;
+  height:250px;
+  max-height: fit-content;
+  background-color: hsl(0, 0%, 63%);
+  text-align: center;
+}
+.info h5{
+  padding-top: 20px;
+}
+.info p{
+  font-size: 12px;
+}
+
+main {
+  margin-left: 0px;
+  
+}
+.navbar ul {
+  list-style-type: none;
+  background: linear-gradient(
+    50deg,
+    rgb(214, 207, 207),
+    rgb(148, 148, 148),
+    rgb(82, 80, 80)
+  );
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+.navbar a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 16px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.navbar a:hover {
+  background: linear-gradient(
+    50deg,
+    rgb(82, 80, 80),
+    rgb(148, 148, 148),
+    rgb(82, 80, 80)
+  )
+}
+
+.kepek img{
+  width: 100%;
+}
+.kepek{
+  width:200px;
+  display: inline-block;
+  margin-top: 0px;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 79%);
+  margin: 10px;
+}
+.kepek .leiras{
+  text-align: center;
+  font-family: 'Caveat', 'Times New Roman';
+}
+.kepek:hover{
+  border: 2px solid hsl(0, 0%, 35%)
+}
+.kepek:hover .leiras{
+  color: rgb(0, 123, 62);
+  font-weight: 900;
+}
+
+
+
+
+@media screen and (max-width:600px){
+  aside,article{
+    width: 100%;
+  }
+}
